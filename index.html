@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>JNTUACEK Sports Club Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    <main class="page">
+      <div class="layout container">
+        <section class="left">
+          <h1 class="site-title fade-in">JNTUACEK</h1>
+          <h2 class="site-sub slide-in">Sports Club Portal</h2>
+
+          <p class="lead fade-in">Join our vibrant sports community. Participate in cricket, kabaddi, kho kho, volleyball, and badminton competitions.</p>
+
+          <div class="features">
+            <div class="feature slide-in">
+              <div class="feat-icon hover-grow">🏆</div>
+              <div class="feat-body">
+                <h3 class="hover-lift">Championships</h3>
+                <p>Inter-college tournaments</p>
+              </div>
+            </div>
+
+            <div class="feature slide-in">
+              <div class="feat-icon hover-grow">👥</div>
+              <div class="feat-body">
+                <h3 class="hover-lift">Team Sports</h3>
+                <p>Build lasting friendships</p>
+              </div>
+            </div>
+
+            <div class="feature slide-in">
+              <div class="feat-icon hover-grow">🎖️</div>
+              <div class="feat-body">
+                <h3 class="hover-lift">Recognition</h3>
+                <p>Certificates & medals</p>
+              </div>
+            </div>
+
+            <div class="feature slide-in">
+              <div class="feat-icon hover-grow">🎯</div>
+              <div class="feat-body">
+                <h3 class="hover-lift">Skill Development</h3>
+                <p>Professional coaching</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="right">
+          <div class="auth-card">
+            <h2 class="auth-title">Welcome Back</h2>
+            <p class="auth-sub">Access your sports club account</p>
+
+            <div class="segmented">
+              <button class="seg-btn active" data-target="login">Login</button>
+              <button class="seg-btn" data-target="register">Register</button>
+            </div>
+
+            <div class="auth-panel fade-in" id="panel-login">
+              <label class="field field-animate">
+                <span class="label">Email</span>
+                <input placeholder="your.email@jntua.ac.in" type="email" id="login-email" class="hover-lift">
+              </label>
+
+              <label class="field field-animate">
+                <span class="label">Password</span>
+                <div class="pw-row">
+                  <input placeholder="" type="password" id="login-password" class="hover-lift">
+                  <button class="eye hover-grow" data-target="login-password">👁️</button>
+                </div>
+              </label>
+
+              <div class="auth-links slide-in">
+                <a href="#" class="hover-lift">Login with Phone</a>
+                <a href="#" class="hover-lift">Forgot Password?</a>
+              </div>
+
+              <button class="btn-primary auth-action btn-animate" id="btn-login-action">Login</button>
+            </div>
+
+            <div class="auth-panel hidden fade-in" id="panel-register">
+              <label class="field field-animate">
+                <span class="label">Full Name</span>
+                <input placeholder="Enter your full name" type="text" id="reg-name" class="hover-lift">
+              </label>
+
+              <label class="field field-animate">
+                <span class="label">Email</span>
+                <input placeholder="your.email@jntua.ac.in" type="email" id="reg-email" class="hover-lift">
+              </label>
+
+              <label class="field field-animate">
+                <span class="label">Roll Number</span>
+                <input placeholder="20B91A05XX" type="text" id="reg-roll" class="hover-lift">
+              </label>
+
+              <div class="row two slide-in">
+                <label class="field small field-animate">
+                  <span class="label">Year</span>
+                  <select id="reg-year" class="hover-lift">
+                    <option>Year</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                </label>
+
+                <label class="field small field-animate">
+                  <span class="label">Branch</span>
+                  <select id="reg-branch" class="hover-lift">
+                    <option>Branch</option>
+                    <option>CSE</option>
+                    <option>ECE</option>
+                    <option>ME</option>
+                    <option>CE</option>
+                  </select>
+                </label>
+              </div>
+
+              <label class="field field-animate">
+                <span class="label">Password</span>
+                <div class="pw-row">
+                  <input placeholder="" type="password" id="reg-password" class="hover-lift">
+                  <button class="eye hover-grow" data-target="reg-password">👁️</button>
+                </div>
+              </label>
+
+              <button class="btn-primary auth-action btn-animate" id="btn-register-action">Register</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
